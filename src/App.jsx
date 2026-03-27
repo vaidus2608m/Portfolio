@@ -231,7 +231,6 @@ const About = () => (
               <div className="space-y-5">
                 {[
                   { name: "LeetCode", info: "DSA Problem Solver", icon: <Terminal size={20}/>, url: "https://leetcode.com/u/vaizus" },
-                  { name: "Codeforces", info: "Competitive Programmer", icon: <Trophy size={20}/>, url: "https://codeforces.com/profile/0xxxVexor" },
                   { name: "GitHub", info: "@vaidus2608m", icon: <Github size={20}/>, url: "https://github.com/vaidus2608m" }
                 ].map((item, i) => (
                   <a key={i} href={item.url} target="_blank" className="flex items-center gap-5 p-5 bg-white/5 rounded-[2rem] border border-white/5 group/item hover:bg-white/10 transition-all duration-500 hover:scale-[1.02]">
@@ -367,14 +366,14 @@ const GitHubSection = () => (
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           <div className="lg:col-span-2 bg-[#121215] border border-white/10 rounded-[3rem] overflow-hidden group hover:border-white/20 transition-all duration-700 shadow-xl">
              <img 
-              src="https://github-readme-stats.vercel.app/api?username=vaidus2608m&show_icons=true&theme=transparent&title_color=ffffff&text_color=a1a1aa&icon_color=ffffff&bg_color=00000000&hide_border=true" 
+              src="https://github-readme-stats-eight-theta.vercel.app/api?username=vaidus2608m&show_icons=true&theme=transparent&title_color=ffffff&text_color=a1a1aa&icon_color=ffffff&bg_color=00000000&hide_border=true" 
               alt="Stats" 
               className="w-full h-auto p-6 md:p-12 opacity-90 group-hover:opacity-100 transition-opacity"
             />
           </div>
           <div className="bg-[#121215] border border-white/10 rounded-[3rem] overflow-hidden flex items-center hover:border-white/20 transition-all duration-700 shadow-xl">
             <img 
-              src="https://github-readme-stats.vercel.app/api/top-langs/?username=vaidus2608m&layout=compact&theme=transparent&title_color=ffffff&text_color=a1a1aa&bg_color=00000000&hide_border=true" 
+              src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=vaidus2608m&layout=compact&theme=transparent&title_color=ffffff&text_color=a1a1aa&bg_color=00000000&hide_border=true" 
               alt="Langs" 
               className="w-full h-auto p-10 opacity-90"
             />
@@ -414,8 +413,7 @@ const Contact = () => (
             { icon: Mail, label: 'Email', href: 'https://mail.google.com/mail/?view=cm&fs=1&to=vaidus2608m@gmail.com' },
             { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/vaidus-tech-16460b378/' },
             { icon: Github, label: 'GitHub', href: 'https://github.com/vaidus2608m' },
-            { icon: Terminal, label: 'LeetCode', href: 'https://leetcode.com/u/vaizus' },
-            { icon: Trophy, label: 'Codeforces', href: 'https://codeforces.com/profile/0xxxVexor' }
+            { icon: Terminal, label: 'LeetCode', href: 'https://leetcode.com/u/vaizus' }
           ].map((link) => (
             <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center group/link">
               <div className="w-20 h-20 bg-white/5 rounded-[1.75rem] flex items-center justify-center mb-5 border border-white/5 group-hover/link:bg-white group-hover/link:text-zinc-950 transition-all duration-700 group-hover/link:scale-110 shadow-2xl active:scale-90">
